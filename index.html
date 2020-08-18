@@ -7,6 +7,7 @@
     <title>S.C.U.F - Início</title>
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 
 <body>
@@ -29,13 +30,13 @@
         <!-- CPF DO FUNCIONÁRIO -->
         <div class="divs">
             <label for="cpf">CPF:</label>
-            <input type="text" placeholder=" Ex: 123.456.890-00" class="texts" id="cpf">
+            <input type="text" placeholder=" Ex: 123.456.890-00" class="textsObg" id="cpf" oninput="checkCPF()">
         </div>
 
         <!-- RG DO FUNCIONÁRIO -->
         <div class="divs">
             <label for="rg">RG:</label>
-            <input type="text" placeholder=" Ex: 12.345.678-9" class="texts" id="rg">
+            <input type="text" placeholder=" Ex: 12.345.678-9" class="textsObg" id="rg" oninput="checkRG()">
         </div>
 
         <!-- NASCIMENTO DO FUNCIONÁRIO -->
@@ -135,9 +136,9 @@
             <input type="text" placeholder=" Ex: Bloco D Ap 24" class="textsMin2" id="cmp">
         </div>
 
-        <input type="button" value="Salvar" id="button">
+        <input type="button" value="Salvar" id="button" onclick="checkButton()">
     </form>
-
+    <script src="index.js"></script>
 </body>
 
 </html>

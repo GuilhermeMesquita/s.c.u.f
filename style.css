@@ -89,6 +89,7 @@ label{
 }
 
 #button{
+    outline: none;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -104,3 +105,19 @@ label{
     background-color: #41596b;
     transition: 1s linear;
 }
+
+.textsObg{
+    outline: none;
+    border-radius: 10px;
+    width: 20%;
+    border: 1px solid #ac0f0f;
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+}
+/* #cpf:valid {
+    border: 1px solid green;
+}
+#cpf:invalid {
+    border: 1px solid red;
+} */
+
