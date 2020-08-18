@@ -4,10 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>S.C.U.F - Início</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+    <header>
+        <div>
+            <img src="./assets/logo.png" id="logo">
+        </div>
+    </header>
+    <div class="divs">
+        <h1>S.C.U.F</h1>
+        <h2>Sistema de Cadastro Único do Funcionário</h2>
+    </div>
+    <form>
+        <!-- NOME DO FUNCIONÁRIO -->
+        <div>
+            <label for="name">Nome do funcionário:</label>
+            <input type="text" placeholder=" Ex: Lucas Santos" class="texts" id="name">
+        </div>
+
+        <!-- CPF DO FUNCIONÁRIO -->
+        <div class="divs">
+            <label for="cpf">CPF:</label>
+            <input type="text" placeholder=" Ex: 123.456.890-00" class="texts" id="cpf">
+        </div>
+
+        <!-- RG DO FUNCIONÁRIO -->
+        <div class="divs">
+            <label for="rg">RG:</label>
+            <input type="text" placeholder=" Ex: 12.345.678-9" class="texts" id="rg">
+        </div>
+
+        <!-- NASCIMENTO DO FUNCIONÁRIO -->
+        <div class="divs">
+            <label for="dataNasc">Data de nascimento:</label>
+            <input type="text" placeholder=" Ex: 01/02/1999" class="texts" id="dataNasc">
+        </div>
+
+        <!--TIPO CNH-->
+        <div class="divs">
+            <label for="selectCNH">Tipo da CNH:</label>
+            <select name="group" id="selectCNH">
+                <optgroup label="CNH: ">
+                    <option value="a">Tipo A</option>
+                    <option value="b">Tipo B</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!--ESTADO CIVIL-->
+        <div class="divs">
+            <label for="estc">Estado Civil:</label>
+            <select name="group" id="estc">
+                <optgroup label="CNH: ">
+                    <option value="ec1">Solteiro(a)</option>
+                    <option value="ec2">Casado(a)</option>
+                    <option value="ec3">Divorciado(a)</option>
+                    <option value="ec4">Viúvo(a)</option>
+                    <option value="ec5">Separado(a)</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!-- CEP -->
+        <div class="divs">
+            <label for="cep">CEP:</label>
+            <input type="text" placeholder=" Ex: 12345-67" class="texts" id="cep">
+        </div>
+        <!-- RUA -->
+
+        <div class="divs">
+            <label for="address">Rua:</label>
+            <input type="text" placeholder=" Ex: Rua Campos de Guarapuava" class="texts" id="address">
+        </div>
+
+        <!-- CIDADE -->
+        <div class="divs">
+            <label for="city">Cidade:</label>
+            <input type="text" placeholder=" Ex: Jundiaí" class="texts" id="city">
+        </div>
+
+        <!--Estado-->
+        <div class="divs">
+            <label for="state">Estado:</label>
+            <select name="group" id="state">
+                <optgroup label="Sigla: ">
+                    <option value="ac">AC</option>
+                    <option value="al">AL</option>
+                    <option value="ap">AP</option>
+                    <option value="am">AM</option>
+                    <option value="ba">BA</option>
+                    <option value="ce">CE</option>
+                    <option value="df">DF</option>
+                    <option value="es">ES</option>
+                    <option value="go">GO</option>
+                    <option value="ma">MA</option>
+                    <option value="mt">MT</option>
+                    <option value="ms">MS</option>
+                    <option value="mg">MG</option>
+                    <option value="pa">PA</option>
+                    <option value="pb">PB</option>
+                    <option value="pr">PR</option>
+                    <option value="pe">PE</option>
+                    <option value="pi">PI</option>
+                    <option value="rj">RJ</option>
+                    <option value="rn">RN</option>
+                    <option value="rs">RS</option>
+                    <option value="ro">RO</option>
+                    <option value="rr">RR</option>
+                    <option value="sc">SC</option>
+                    <option value="sp">SP</option>
+                    <option value="se">SE</option>
+                    <option value="to">TO</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!-- NUMBER -->
+        <div class="divs">
+            <label for="number">Número:</label>
+            <input type="text" placeholder=" Ex: 87" class="textsMin" id="number">
+        </div>
+
+        <!-- COMPLEMENTO -->
+        <div class="divs">
+            <label for="cmp">Complemento:</label>
+            <input type="text" placeholder=" Ex: Bloco D Ap 24" class="textsMin2" id="cmp">
+        </div>
+
+        <input type="button" value="Salvar" id="button">
+    </form>
 
 </body>
 
