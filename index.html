@@ -4,118 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S.C.ú.F - Início</title>
-    <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="main.css">
+    <script src="./script.js"></script>
+    <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div>
-            <img src="./assets/logo.png" id="logo">
-        </div>
-    </header>
-    <div class="divs">
-        <h1>S.C.ú.F</h1>
-        <h2>Sistema de Cadastro Único do Funcionário</h2>
-        <p>Favor preencher os campos de texto em VERMELHO!</p>
-    </div>
-    <form id="formulario">
-        <!-- NOME DO FUNCIONÁRIO -->
-        <div>
-            <label for="name">Nome do funcionário:</label>
-            <input type="text" placeholder=" Ex: Lucas Santos" class="texts" id="name" autocomplete="off">
-        </div>
 
-        <!-- CPF DO FUNCIONÁRIO -->
-        <div class="divs">
-            <label for="cpf">CPF:</label>
-            <input type="text" placeholder=" Ex: 123.456.890-00" class="textsObg" id="cpf" autocomplete="off"
-                minlength="14" maxlength="14" oninput="checkCPF()">
-
-        </div>
-
-        <!-- RG DO FUNCIONÁRIO -->
-        <div class="divs">
-            <label for="rg">RG:</label>
-            <input type="text" placeholder=" Ex: 12.345.678-9" class="textsObg" id="rg" autocomplete="off"
-                oninput="checkRG()" minlength="12" maxlength="12">
-        </div>
-
-        <!-- NASCIMENTO DO FUNCIONÁRIO -->
-        <div class=" divs">
-            <label for="dataNasc">Data de nascimento:</label>
-            <input type="text" placeholder=" Ex: 01/02/1999" class="texts" id="dataNasc" autocomplete="off">
-        </div>
-
-        <!--TIPO CNH-->
-        <div class="divs">
-            <label for="selectCNH">Tipo da CNH:</label>
-            <select name="group" id="selectCNH">
-                <optgroup label="CNH: ">
-                    <option value="a">Tipo A</option>
-                    <option value="b">Tipo B</option>
-                </optgroup>
-            </select>
-        </div>
-
-        <!--ESTADO CIVIL-->
-        <div class="divs">
-            <label for="estc">Estado Civil:</label>
-            <select name="group" id="estc">
-                <optgroup label="CNH: ">
-                    <option value="ec1">Solteiro(a)</option>
-                    <option value="ec2">Casado(a)</option>
-                    <option value="ec3">Divorciado(a)</option>
-                    <option value="ec4">Viúvo(a)</option>
-                    <option value="ec5">Separado(a)</option>
-                </optgroup>
-            </select>
-        </div>
-
-        <!-- CEP -->
-        <div class="divs">
-            <label for="cep">CEP:</label>
-            <input type="text" placeholder=" Ex: 12345-678" class="textsObg" id="cep" onchange="validCEP(this.value)"
-                oninput="checkCEP()" autocomplete="off" minlength="9" maxlength="9">
-        </div>
-        <!-- RUA -->
-
-        <div class="divs">
-            <label for="address">Rua:</label>
-            <input type="text" placeholder=" Ex: Rua Campos de Guarapuava" class="texts" id="address"
-                autocomplete="off">
-        </div>
-
-        <!-- CIDADE -->
-        <div class="divs">
-            <label for="city">Cidade:</label>
-            <input type="text" placeholder=" Ex: Jundiaí" class="texts" id="city" autocomplete="off">
-
-        </div>
-
-        <!--Estado-->
-        <div class="divs">
-            <label for="state">Estado (Sigla):</label>
-            <input type="text" class="textsMinDis" id="state" autocomplete="off">
-        </div>
-
-        <!-- NUMBER -->
-        <div class="divs">
-            <label for="number">Número:</label>
-            <input type="text" placeholder=" Ex: 87" class="textsMin" id="number" autocomplete="off">
-        </div>
-
-        <!-- COMPLEMENTO -->
-        <div class="divs">
-            <label for="cmp">Complemento:</label>
-            <input type="text" placeholder=" Ex: Bloco D Ap 24" class="textsMin2" id="cmp" autocomplete="off">
-        </div>
-
-        <input type="button" value="Salvar" id="button" onclick="checkButton()" onchange="Cidade()" autocomplete="off">
-    </form>
-    <script src="index.js"></script>
 </body>
 
 </html>
