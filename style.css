@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
+p{
+    text-align: center;
+    font-family: "Roboto Mono";
+    color: red;
+}
 h1{
     text-align: center;
     font-family: "Montserrat",sans-serif;
